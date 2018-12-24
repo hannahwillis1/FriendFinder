@@ -3,6 +3,9 @@ var PORT = process.env.PORT || 3001;
 
 require("./app/routing/apiRoutes.js")(app);
 require("./app/routing/htmlRoutes.js")(app);
+require("mysql://pxc702aijgiszaav:et3vq20vmncgbo0g@y0nkiij6humroewt.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/nwwdvj2cuqpdqvwo")(
+  app
+);
 
 var express = require("express");
 var parser = require("body-parser");
